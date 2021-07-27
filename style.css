@@ -110,8 +110,8 @@ body {
   background-size: 200% 200%;
   font-size: 1.1;
   margin-bottom: 30px;
-  -webkit-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  -webkit-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
