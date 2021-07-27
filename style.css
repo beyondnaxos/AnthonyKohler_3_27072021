@@ -188,6 +188,7 @@ body {
 }
 
 .main--howto .btn_bloc .btn--id {
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +196,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 15px 30px;
+  padding: 17px 30px;
   border: none;
   border-radius: 20px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -203,6 +204,7 @@ body {
   font-weight: 500;
   padding-left: 30px;
   color: #3b3b3b;
+  font-size: 17px;
 }
 
 .main--howto .btn_bloc .btn--id .phone {

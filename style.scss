@@ -158,15 +158,17 @@ body {
             font-weight: 500;
         }
         .btn--id {
+            width: 80vw;
             display: flex;
             flex-direction: row;
-            padding: 15px 30px;
+            padding: 17px 30px;
             border: none;
             border-radius: 20px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             font-weight: 500;
             padding-left: 30px;
             color: rgb(59, 59, 59);
+            font-size: 17px;
 
             .phone {
                 padding-right: 18px;
@@ -175,4 +177,3 @@ body {
         }
     }
 }
-
