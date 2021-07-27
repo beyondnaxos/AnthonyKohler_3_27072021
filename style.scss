@@ -34,40 +34,84 @@ $mint: #99e2d0;
 
 body {
     @include colMode;
-    .logo--container{
-        @include hCenter;
-        width: 100%;
-        background-color: #ffffff;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        z-index: 2;
-        .logo{
-            padding: 4vw 0 2vw 0;
-            width: 45%;
-            height: auto;
-
-        }
-    }
-    main{
-        .main--location {
-            display: flex;
-            justify-content: center;
-            font-weight: 500;
-            background-color: #f2f2f2;
-            width: 100vw;
-            padding: 4vw 0 4vw 0;
-            font-size: 4.2vw;
-            padding-right: 9vw;
-
-            .location{
-                margin-right: 3vw;
-                color: rgb(61, 60, 60);
-
-            }
-            .location_name{
-                color: rgb(61, 60, 60);
-            }
-        }
-    }
-
 }
 
+.logo--container {
+    @include hCenter;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 5;
+    .logo {
+        padding: 4vw 0 2vw 0;
+        width: 45%;
+        height: auto;
+    }
+}
+
+.main--location {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    background-color: #f2f2f2;
+    width: 100vw;
+    padding: 4vw 0 4vw 0;
+    font-size: 4.2vw;
+    padding-right: 9vw;
+    z-index: 4;
+    .location {
+        margin-right: 3vw;
+        color: rgb(61, 60, 60);
+    }
+    .location_name {
+        color: rgb(61, 60, 60);
+    }
+}
+
+.main--exploration {
+    width: 100%;
+    background-color: #faf9f9;
+    z-index: 2;
+    @include colMode();
+    padding: 35px;
+    row-gap: 20px;
+
+    .exploration_title {
+        width: 75%;
+        text-align: center;
+    }
+
+    .exploration_description{
+        width: 90%;
+        text-align: center;
+        color: rgb(61, 60, 60);
+
+    }
+
+    .exploration_btn{
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: none;
+        font-weight: 400;
+        color: white;
+        background: linear-gradient(314deg, #9356dc, #ff46da);
+        background-size: 200% 200%;
+        font-size: 1.1;
+    
+        -webkit-animation: AnimationName 10s ease infinite;
+        animation: AnimationName 10s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:46% 0%}
+        50%{background-position:55% 100%}
+        100%{background-position:46% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:46% 0%}
+        50%{background-position:55% 100%}
+        100%{background-position:46% 0%}
+    }
+
+    
+}

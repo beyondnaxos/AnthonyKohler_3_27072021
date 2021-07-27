@@ -25,7 +25,7 @@ body {
           justify-content: center;
 }
 
-body .logo--container {
+.logo--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,16 +36,16 @@ body .logo--container {
   background-color: #ffffff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  z-index: 2;
+  z-index: 5;
 }
 
-body .logo--container .logo {
+.logo--container .logo {
   padding: 4vw 0 2vw 0;
   width: 45%;
   height: auto;
 }
 
-body main .main--location {
+.main--location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,14 +58,81 @@ body main .main--location {
   padding: 4vw 0 4vw 0;
   font-size: 4.2vw;
   padding-right: 9vw;
+  z-index: 4;
 }
 
-body main .main--location .location {
+.main--location .location {
   margin-right: 3vw;
   color: #3d3c3c;
 }
 
-body main .main--location .location_name {
+.main--location .location_name {
   color: #3d3c3c;
+}
+
+.main--exploration {
+  width: 100%;
+  background-color: #faf9f9;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 35px;
+  row-gap: 20px;
+}
+
+.main--exploration .exploration_title {
+  width: 75%;
+  text-align: center;
+}
+
+.main--exploration .exploration_description {
+  width: 90%;
+  text-align: center;
+  color: #3d3c3c;
+}
+
+.main--exploration .exploration_btn {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 400;
+  color: white;
+  background: linear-gradient(314deg, #9356dc, #ff46da);
+  background-size: 200% 200%;
+  font-size: 1.1;
+  -webkit-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 46% 0%;
+  }
+  50% {
+    background-position: 55% 100%;
+  }
+  100% {
+    background-position: 46% 0%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 46% 0%;
+  }
+  50% {
+    background-position: 55% 100%;
+  }
+  100% {
+    background-position: 46% 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
