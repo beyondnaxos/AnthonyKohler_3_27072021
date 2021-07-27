@@ -135,15 +135,21 @@ body {
 .main--howto {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 25px;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 2em;
+    margin: 2em auto;
+
+    .howto--title{
+        margin-left: 1.4em;
+    }
 
     .btn_bloc {
         display: flex;
         flex-direction: row;
         margin-bottom: 20px;
+        margin-left: 1em;
+
 
         .btn--number {
             position: relative;
