@@ -74,7 +74,7 @@ body {
     z-index: 2;
     @include colMode();
     padding: 35px;
-    row-gap: 20px;
+    row-gap: 25px;
 
     .exploration_title {
         width: 75%;
@@ -97,7 +97,7 @@ body {
         background: linear-gradient(314deg, #9356dc, #ff46da);
         background-size: 200% 200%;
         font-size: 1.1;
-    
+        margin-bottom: 30px;
         -webkit-animation: AnimationName 10s ease infinite;
         animation: AnimationName 10s ease infinite;
     }
