@@ -7,7 +7,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -34,14 +33,39 @@ body .logo--container {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
 }
 
 body .logo--container .logo {
-  padding: 22px 0 10px 0;
+  padding: 4vw 0 2vw 0;
   width: 45%;
   height: auto;
+}
+
+body main .main--location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  width: 100vw;
+  padding: 4vw 0 4vw 0;
+  font-size: 4.2vw;
+  padding-right: 9vw;
+}
+
+body main .main--location .location {
+  margin-right: 3vw;
+  color: #3d3c3c;
+}
+
+body main .main--location .location_name {
+  color: #3d3c3c;
 }
 /*# sourceMappingURL=style.css.map */
