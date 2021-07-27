@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 $purp: #9356dc;
 $pink: #ff46da;
@@ -44,9 +45,13 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 5;
     .logo {
-        padding: 4vw 0 2vw 0;
+        padding: 15px 0 10px 0;
         width: 45%;
         height: auto;
+        font-family: 'Shrikhand', cursive;
+        user-select: none;
+        text-align: center;
+        
     }
 }
 
@@ -56,18 +61,20 @@ body {
     font-weight: 500;
     background-color: #f2f2f2;
     width: 100vw;
-    padding: 4vw 0 4vw 0;
+    padding: 18px 0 18px 0;
     
-    padding-right: 9vw;
+   
     z-index: 4;
     .location {
-        margin-right: 3vw;
+        margin-right: 20px;
         color: rgb(61, 60, 60);
-        font-size: 4.2vw;
+        font-size: 16px;
     }
     .location_name {
         color: rgb(61, 60, 60);
-        font-size: 4.2vw;
+        font-size: 16px;
+        margin-right: 3vw;
+
     }
 }
 
@@ -80,12 +87,12 @@ body {
     row-gap: 25px;
 
     .exploration_title {
-        width: 75%;
+        width: 78%;
         text-align: center;
     }
 
     .exploration_description{
-        width: 90%;
+        width: 100%;
         text-align: center;
         color: rgb(61, 60, 60);
 
