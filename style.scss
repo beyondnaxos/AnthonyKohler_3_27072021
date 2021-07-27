@@ -140,7 +140,7 @@ body {
     align-items: flex-start;
     margin: 2em auto;
 
-    .howto--title{
+    .howto--title {
         margin-left: 1.4em;
     }
 
@@ -149,7 +149,6 @@ body {
         flex-direction: row;
         margin-bottom: 20px;
         margin-left: 1em;
-
 
         .btn--number {
             position: relative;
@@ -179,6 +178,65 @@ body {
             .phone {
                 padding-right: 18px;
                 color: rgb(104, 103, 103);
+            }
+        }
+    }
+}
+
+.main--restaurants {
+    background-color: #f2f2f2;
+    @include colMode();
+    padding: 2em 0;
+
+    .restaurant--title {
+        width: 90%;
+    }
+
+    .restaurant--group_cards {
+        @include colMode();
+
+        .card {
+            margin-top: 2em;
+            width: 90%;
+            height: 250px;
+            background-color: #fff;
+            @include colMode();
+            object-fit: cover;
+            border-radius: 20px;
+            padding-bottom: 1.5em;
+            margin-bottom: 1em;
+
+            .card_image {
+                width: 100%;
+                border-radius: 18px 18px 0 0;
+                height: 85%;
+                box-sizing: border-box;
+                object-fit: cover;
+            }
+
+            .card_description {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 0.7em;
+                width: 100%;
+
+                .description_text {
+                    padding-left: 1.5em;
+
+                    .text_title {
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .heart {
+                    padding-right: 1em;
+
+                    &:hover {
+                        color: $pink;
+                    }
+                }
             }
         }
     }

@@ -216,4 +216,100 @@ body {
   padding-right: 18px;
   color: #686767;
 }
+
+.main--restaurants {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0;
+}
+
+.main--restaurants .restaurant--title {
+  width: 90%;
+}
+
+.main--restaurants .restaurant--group_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main--restaurants .restaurant--group_cards .card {
+  margin-top: 2em;
+  width: 90%;
+  height: 250px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  padding-bottom: 1.5em;
+  margin-bottom: 1em;
+}
+
+.main--restaurants .restaurant--group_cards .card .card_image {
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+  height: 85%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main--restaurants .restaurant--group_cards .card .card_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.7em;
+  width: 100%;
+}
+
+.main--restaurants .restaurant--group_cards .card .card_description .description_text {
+  padding-left: 1.5em;
+}
+
+.main--restaurants .restaurant--group_cards .card .card_description .description_text .text_title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.main--restaurants .restaurant--group_cards .card .card_description .heart {
+  padding-right: 1em;
+}
+
+.main--restaurants .restaurant--group_cards .card .card_description .heart:hover {
+  color: #ff46da;
+}
 /*# sourceMappingURL=style.css.map */
