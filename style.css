@@ -56,7 +56,6 @@ body {
   background-color: #f2f2f2;
   width: 100vw;
   padding: 4vw 0 4vw 0;
-  font-size: 4.2vw;
   padding-right: 9vw;
   z-index: 4;
 }
@@ -64,10 +63,12 @@ body {
 .main--location .location {
   margin-right: 3vw;
   color: #3d3c3c;
+  font-size: 4.2vw;
 }
 
 .main--location .location_name {
   color: #3d3c3c;
+  font-size: 4.2vw;
 }
 
 .main--exploration {

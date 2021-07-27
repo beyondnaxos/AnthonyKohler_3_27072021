@@ -56,15 +56,17 @@ body {
     background-color: #f2f2f2;
     width: 100vw;
     padding: 4vw 0 4vw 0;
-    font-size: 4.2vw;
+    
     padding-right: 9vw;
     z-index: 4;
     .location {
         margin-right: 3vw;
         color: rgb(61, 60, 60);
+        font-size: 4.2vw;
     }
     .location_name {
         color: rgb(61, 60, 60);
+        font-size: 4.2vw;
     }
 }
 
