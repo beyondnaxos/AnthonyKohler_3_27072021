@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 $purp: #9356dc;
 $pink: #ff46da;
@@ -48,10 +48,9 @@ body {
         padding: 15px 0 10px 0;
         width: 45%;
         height: auto;
-        font-family: 'Shrikhand', cursive;
+        font-family: "Shrikhand", cursive;
         user-select: none;
         text-align: center;
-        
     }
 }
 
@@ -62,8 +61,7 @@ body {
     background-color: #f2f2f2;
     width: 100vw;
     padding: 18px 0 18px 0;
-    
-   
+
     z-index: 4;
     .location {
         margin-right: 20px;
@@ -74,7 +72,6 @@ body {
         color: rgb(61, 60, 60);
         font-size: 16px;
         margin-right: 3vw;
-
     }
 }
 
@@ -91,14 +88,13 @@ body {
         text-align: center;
     }
 
-    .exploration_description{
+    .exploration_description {
         width: 100%;
         text-align: center;
         color: rgb(61, 60, 60);
-
     }
 
-    .exploration_btn{
+    .exploration_btn {
         padding: 15px 20px;
         border-radius: 30px;
         border: none;
@@ -113,15 +109,70 @@ body {
     }
 
     @-webkit-keyframes AnimationName {
-        0%{background-position:46% 0%}
-        50%{background-position:55% 100%}
-        100%{background-position:46% 0%}
+        0% {
+            background-position: 46% 0%;
+        }
+        50% {
+            background-position: 55% 100%;
+        }
+        100% {
+            background-position: 46% 0%;
+        }
     }
     @keyframes AnimationName {
-        0%{background-position:46% 0%}
-        50%{background-position:55% 100%}
-        100%{background-position:46% 0%}
+        0% {
+            background-position: 46% 0%;
+        }
+        50% {
+            background-position: 55% 100%;
+        }
+        100% {
+            background-position: 46% 0%;
+        }
     }
-
-    
 }
+
+.main--howto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2em;
+
+    .btn_bloc {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        .btn--number {
+            position: relative;
+            left: 13px;
+            padding-top: 3px;
+            text-align: center;
+            height: 25px;
+            width: 25px;
+            background-color: $purp;
+            border-radius: 15px;
+            color: white;
+            font-weight: 500;
+        }
+        .btn--id {
+            display: flex;
+            flex-direction: row;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            font-weight: 500;
+            padding-left: 30px;
+            color: rgb(59, 59, 59);
+
+            .phone {
+                padding-right: 18px;
+                color: rgb(104, 103, 103);
+            }
+        }
+    }
+}
+
