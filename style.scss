@@ -35,6 +35,18 @@ $mint: #99e2d0;
 
 body {
     @include colMode;
-    
+    .logo--container{
+        @include hCenter;
+        width: 100%;
+        background-color: #f2f2f2;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .logo{
+            padding: 22px 0 10px 0;
+            width: 45%;
+            height: auto;
+
+        }
+    }
+
 }
 
