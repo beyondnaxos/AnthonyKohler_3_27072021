@@ -164,6 +164,7 @@ body {
             color: white;
             font-weight: 500;
         }
+        
         .btn--id {
             width: 80vw;
             display: flex;
@@ -180,6 +181,17 @@ body {
             .phone {
                 padding-right: 18px;
                 color: rgb(104, 103, 103);
+            }
+        }
+
+        .btn--id_2{
+            background-color: rgb(246, 235, 255);
+            .store {
+                color: $purp;
+            }
+
+            .prpl_text{
+                padding-left: 1.1em;
             }
         }
     }
