@@ -1,114 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ohmyfood</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/0b7da06416.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0b7da06416.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="logo--container">
-        <h1 class="logo">ohmyfood</h1>
+      <h1 class="logo">ohmyfood</h1>
     </header>
     <main>
-        <header class="main--location">
-            <!-- icone + location  -->
-            <i class="material-icons location">location_on</i>
-            <p class="location_name">Paris, Belleville</p>
-            
-        </header>
-        <section class="main--exploration">
-            
-               <h2 class="exploration_title">Réservez le menu qui vous convient </h2>
-               <p class="exploration_description">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-               <button class="exploration_btn">Explorer nos restaurants</button>
-            
-        </section>
-        <section class="main--howto">
-            <h2 class="howto--title">Fonctionnement</h2>
-            <div class="howto--btn_group">
-               <div class="btn_bloc btn_bloc_first ">
-                   <span class="btn--number">1</span>
-                   <button class="btn--id btn--id_1">
-                    <i class="material-icons phone ">phone_iphone</i>
-                       <span>Choisissez un restaurant</span>
-                    </button>
-               </div> 
-               <div class="btn_bloc btn_bloc_second">
-                   <span class="btn--number">2</span>
-                   <button class="btn--id btn--id_1">
-                    <i class="material-icons phone ">format_list_bulleted</i>
-                       <span>Composez votre menu</span>
-                    </button>
-               </div> 
-               <div class="btn_bloc btn_bloc_third">
-                   <span class="btn--number">3</span>
-                   <button class="btn--id btn--id_1">
-                    <i class="material-icons phone ">storefront</i>
-                    <span>Dégustez au restaurant</span>
-                </button>
-            </div> 
+      <header class="main--location">
+        <!-- icone + location  -->
+        <i class="material-icons location">location_on</i>
+        <p class="location_name">Paris, Belleville</p>
+      </header>
+      <section class="main--exploration">
+        <h2 class="exploration_title">Réservez le menu qui vous convient</h2>
+        <p class="exploration_description">
+          Découvrez des restaurants d'exception, séléctionnés par nos soins
+        </p>
+        <button class="exploration_btn">Explorer nos restaurants</button>
+      </section>
+      <section class="main--howto">
+        <h2 class="howto--title">Fonctionnement</h2>
+        <div class="howto--btn_group">
+          <div class="btn_bloc btn_bloc_first">
+            <span class="btn--number">1</span>
+            <button class="btn--id btn--id_1">
+              <i class="material-icons phone">phone_iphone</i>
+              <span>Choisissez un restaurant</span>
+            </button>
+          </div>
+          <div class="btn_bloc btn_bloc_second">
+            <span class="btn--number">2</span>
+            <button class="btn--id btn--id_1">
+              <i class="material-icons phone">format_list_bulleted</i>
+              <span>Composez votre menu</span>
+            </button>
+          </div>
+          <div class="btn_bloc btn_bloc_third">
+            <span class="btn--number">3</span>
+            <button class="btn--id btn--id_1">
+              <i class="material-icons phone">storefront</i>
+              <span>Dégustez au restaurant</span>
+            </button>
+          </div>
         </div>
-    </section>
-    <section class="main--restaurants">
+      </section>
+      <section class="main--restaurants">
         <h2 class="restaurant--title">Restaurants</h2>
         <div class="restaurant--group_cards">
-            <div class="card">
-                <img src="images/restaurants/gout.jpg" alt="La palette du goût" class="card_image">
-                <div class="card_description">
-                    <div class="description_text">
-                        <p class="text_title">La palette du goût</p>
-                        <p class="text_quote">Ménilmontant</p>
-                    </div>
-                    <i class="material-icons heart ">favorite_border</i>
-                </div>
-                <span class="new">Nouveau</span>
+          <div class="card">
+            <img
+              src="images/restaurants/gout.jpg"
+              alt="La palette du goût"
+              class="card_image"
+            />
+            <div class="card_description">
+              <div class="description_text">
+                <p class="text_title">La palette du goût</p>
+                <p class="text_quote">Ménilmontant</p>
+              </div>
+              <i class="material-icons heart">favorite_border</i>
             </div>
-            <div class="card">
-                <img src="images/restaurants/note.jpg" alt="La note enchantée" class="card_image">
-                <div class="card_description">
-                    <div class="description_text">
-                        <p class="text_title">La note enchantée</p>
-                        <p class="text_quote">Charonne</p>
-                    </div>
-                    <i class="material-icons heart ">favorite_border</i>
-                </div>
-                
-                <span class="new">Nouveau</span>
-                </div>
-            <div class="card">
-                <img src="images/restaurants/francaise.jpg" alt="À la française" class="card_image">
-                <div class="card_description">
-                    <div class="description_text">
-                        <p class="text_title">À la française</p>
-                        <p class="text_quote">Cité Rouge</p>
-                    </div>
-                    <i class="material-icons heart ">favorite_border</i>
-                    </div>
-
-                </div>
-            <div class="card">
-                <img src="images/restaurants/sens.jpg" alt="le délice des sens" class="card_image">
-                <div class="card_description">
-                    <div class="description_text">
-                        <p class="text_title">Le délice des sens</p>
-                        <p class="text_quote">Folie-Méricourt</p>
-                    </div>
-                    <i class="material-icons heart ">favorite_border</i>
-                    </div>
-
-                </div>
+            <span class="new">Nouveau</span>
+          </div>
+          <div class="card">
+            <img
+              src="images/restaurants/note.jpg"
+              alt="La note enchantée"
+              class="card_image"
+            />
+            <div class="card_description">
+              <div class="description_text">
+                <p class="text_title">La note enchantée</p>
+                <p class="text_quote">Charonne</p>
+              </div>
+              <i class="material-icons heart">favorite_border</i>
             </div>
-        </section>
+
+            <span class="new">Nouveau</span>
+          </div>
+          <div class="card">
+            <img
+              src="images/restaurants/francaise.jpg"
+              alt="À la française"
+              class="card_image"
+            />
+            <div class="card_description">
+              <div class="description_text">
+                <p class="text_title">À la française</p>
+                <p class="text_quote">Cité Rouge</p>
+              </div>
+              <i class="material-icons heart">favorite_border</i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/restaurants/sens.jpg"
+              alt="le délice des sens"
+              class="card_image"
+            />
+            <div class="card_description">
+              <div class="description_text">
+                <p class="text_title">Le délice des sens</p>
+                <p class="text_quote">Folie-Méricourt</p>
+              </div>
+              <i class="material-icons heart">favorite_border</i>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer--list">
-            <!-- 2 div / icone + text -->
-            <!-- 2 paragraphs for legit + contact-->
+      <div class="footer--list">
+        <p class="footer_logo">ohmyfood</p>
+        <div class="list_iconText">
+          <i class="material-icons fork">restaurant</i>
+          <p class="list_text">Proposer un restaurant</p>
         </div>
+        <div class="list_iconText">
+          <img class="list_icon" src="icones/hands-helping-solid.svg" alt="icone">
+          <p class="list_text">Devenir partenaire</p>
+        </div>
+        <p class="list_text">Mentions légales</p>
+        <p class="list_text">Contact</p>
+
+        <!-- 2 div / icone + text -->
+        <!-- 2 paragraphs for legit + contact-->
+      </div>
     </footer>
-</body>
+  </body>
 </html>

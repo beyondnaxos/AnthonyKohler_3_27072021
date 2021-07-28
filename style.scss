@@ -4,6 +4,8 @@
 $purp: #9356dc;
 $pink: #ff46da;
 $mint: #99e2d0;
+$gren: #008000;
+$shrk: "Shrikhand", cursive;
 
 @mixin hCenter {
     display: flex;
@@ -48,7 +50,7 @@ body {
         padding: 15px 0 10px 0;
         width: 45%;
         height: auto;
-        font-family: "Shrikhand", cursive;
+        font-family: $shrk;
         user-select: none;
         text-align: center;
     }
@@ -184,8 +186,8 @@ body {
 }
 
 .main--restaurants {
-    background-color:#faf9f9;
-    
+    background-color: #faf9f9;
+
     @include colMode();
     padding: 2em 0;
 
@@ -216,7 +218,6 @@ body {
                 position: relative;
             }
 
-            
             .card_description {
                 display: flex;
                 flex-direction: row;
@@ -245,8 +246,7 @@ body {
     }
 }
 
-
-.new{
+.new {
     position: relative;
     z-index: 55;
     bottom: 100%;
@@ -255,7 +255,60 @@ body {
     padding: 5px 15px;
     border: none;
     border-radius: 7px;
-    background-color: #99e2d0;
-    color: green;
-    font-weight: 700;
+    background-color: $mint;
+    color: $gren;
+    font-weight: 500;
 }
+
+footer {
+    @include colMode();
+    width: 100%;
+    background-color: #252525;
+    z-index: 2;
+    @include colMode();
+    padding: 20px 30px;
+    row-gap: 25px;
+    justify-content: start;
+    align-items: flex-start;
+
+    .footer--list {
+        @include colMode();
+        width: 100%;
+        row-gap: 15px;
+        justify-content: flex-start;
+
+        .footer_logo {
+            color: white;
+            font-family: $shrk;
+            margin-right: auto;
+            font-size: 1.2em;
+        }
+
+        .list_text{
+            color: white;
+            margin-right: auto;
+        }
+        .list_iconText {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .fork{
+                color: white;
+            }
+
+            .list_icon {
+                width: 20px;
+            }
+
+            .list_text{
+                padding-left: 8px;
+            }
+        }
+        
+    }
+}
+
+
+
+
