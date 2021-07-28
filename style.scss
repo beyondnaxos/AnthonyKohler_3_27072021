@@ -192,22 +192,23 @@ body {
     padding: 2em 0;
 
     .restaurant--title {
+        margin-bottom: 2em;
         width: 90%;
     }
 
     .restaurant--group_cards {
         @include colMode();
-
+        
         .card {
-            margin-top: 2em;
             width: 90%;
             height: 250px;
             background-color: #fff;
             @include colMode();
             object-fit: cover;
             border-radius: 20px;
-            padding-bottom: 1.5em;
-            margin-bottom: 1em;
+            padding-bottom: 2em;
+            margin-bottom: 3em;
+            color: black;
 
             .card_image {
                 width: 100%;
@@ -222,8 +223,10 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                padding-top: 0.7em;
+                padding-top: 1em;
                 width: 100%;
+
+            
 
                 .description_text {
                     padding-left: 1.5em;
@@ -309,6 +312,13 @@ footer {
     }
 }
 
+a{
+    text-decoration: none;
+    
+}
 
 
 
+#card_1, #card_2{
+    padding-bottom: 1em;
+}

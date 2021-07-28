@@ -233,6 +233,7 @@ body {
 }
 
 .main--restaurants .restaurant--title {
+  margin-bottom: 2em;
   width: 90%;
 }
 
@@ -250,7 +251,6 @@ body {
 }
 
 .main--restaurants .restaurant--group_cards .card {
-  margin-top: 2em;
   width: 90%;
   height: 250px;
   background-color: #fff;
@@ -267,8 +267,9 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
-  padding-bottom: 1.5em;
-  margin-bottom: 1em;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+  color: black;
 }
 
 .main--restaurants .restaurant--group_cards .card .card_image {
@@ -293,7 +294,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 0.7em;
+  padding-top: 1em;
   width: 100%;
 }
 
@@ -406,5 +407,13 @@ footer .footer--list .list_iconText .list_icon {
 
 footer .footer--list .list_iconText .list_text {
   padding-left: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#card_1, #card_2 {
+  padding-bottom: 1em;
 }
 /*# sourceMappingURL=style.css.map */
