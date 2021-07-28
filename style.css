@@ -115,7 +115,7 @@ body {
   color: white;
   background: linear-gradient(314deg, #9356dc, #ff46da);
   background-size: 200% 200%;
-  font-size: 1.1;
+  font-size: 1em;
   margin-bottom: 30px;
   -webkit-animation: AnimationName 5s ease infinite;
   animation: AnimationName 5s ease infinite;
@@ -218,7 +218,7 @@ body {
 }
 
 .main--restaurants {
-  background-color: #f2f2f2;
+  background-color: #faf9f9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,6 +279,7 @@ body {
           box-sizing: border-box;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
 
 .main--restaurants .restaurant--group_cards .card .card_description {
@@ -311,5 +312,19 @@ body {
 
 .main--restaurants .restaurant--group_cards .card .card_description .heart:hover {
   color: #ff46da;
+}
+
+.new {
+  position: relative;
+  z-index: 55;
+  bottom: 100%;
+  left: 30%;
+  background-color: #fff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 7px;
+  background-color: #99e2d0;
+  color: green;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
