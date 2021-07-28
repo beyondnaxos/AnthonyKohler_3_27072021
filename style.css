@@ -217,18 +217,6 @@ body {
   color: #686767;
 }
 
-.main--howto .btn_bloc .btn--id_2 {
-  background-color: #f6ebff;
-}
-
-.main--howto .btn_bloc .btn--id_2 .store {
-  color: #9356dc;
-}
-
-.main--howto .btn_bloc .btn--id_2 .prpl_text {
-  padding-left: 1.1em;
-}
-
 .main--restaurants {
   background-color: #faf9f9;
   display: -webkit-box;
