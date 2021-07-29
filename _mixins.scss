@@ -1,0 +1,18 @@
+@mixin hCenter {
+    display: flex;
+    justify-content: center;
+}
+@mixin vCenter {
+    display: flex;
+    align-items: center;
+}
+@mixin xyCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin colMode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
