@@ -1,5 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.restaurant--group_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurant--group_cards .card {
+  width: 90%;
+  height: 250px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+  color: black;
+}
+
+.restaurant--group_cards .card .card_image {
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+  height: 85%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.restaurant--group_cards .card .card_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1em;
+  width: 100%;
+}
+
+.restaurant--group_cards .card .card_description .description_text {
+  padding-left: 1.5em;
+}
+
+.restaurant--group_cards .card .card_description .description_text .text_title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.restaurant--group_cards .card .card_description .heart {
+  padding-right: 1em;
+}
+
+.restaurant--group_cards .card .card_description .heart:hover {
+  color: #ff46da;
+}
+
 *,
 ::before,
 ::after {
@@ -235,84 +313,6 @@ body {
 .main--restaurants .restaurant--title {
   margin-bottom: 2em;
   width: 90%;
-}
-
-.main--restaurants .restaurant--group_cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main--restaurants .restaurant--group_cards .card {
-  width: 90%;
-  height: 250px;
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 20px;
-  padding-bottom: 2em;
-  margin-bottom: 3em;
-  color: black;
-}
-
-.main--restaurants .restaurant--group_cards .card .card_image {
-  width: 100%;
-  border-radius: 18px 18px 0 0;
-  height: 85%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-}
-
-.main--restaurants .restaurant--group_cards .card .card_description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 1em;
-  width: 100%;
-}
-
-.main--restaurants .restaurant--group_cards .card .card_description .description_text {
-  padding-left: 1.5em;
-}
-
-.main--restaurants .restaurant--group_cards .card .card_description .description_text .text_title {
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.main--restaurants .restaurant--group_cards .card .card_description .heart {
-  padding-right: 1em;
-}
-
-.main--restaurants .restaurant--group_cards .card .card_description .heart:hover {
-  color: #ff46da;
 }
 
 .new {
