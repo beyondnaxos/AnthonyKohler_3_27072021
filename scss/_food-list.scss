@@ -4,7 +4,7 @@
     background-color: $gray;
     position: relative;
     bottom: 55px;
-    padding: 45px 30px ;
+    padding: 30px 15px ;
     border-radius: 50px 50px 0 0;
     display: flex;
     flex-direction: column;
@@ -19,11 +19,15 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
+        padding: 0 10px;
+
     
         .shrnk{
             font-family: $shrk;
-            font-size: 20Px;
-
+            font-size: 30px;
+        }
+        .heart{
+        font-size: 40px;            
 
         }
     }
@@ -43,7 +47,75 @@
     margin: .5rem 0 0 0;
 }
 
+.btn--group_meal{
+    padding-top: 1em;
+}
 
+.food--list{
+    width: 100%;
+    
+
+}
+
+.btn-meal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    
+    
+
+    .meal{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+
+
+        .meal_name{
+            font-weight: 700;
+    
+        }
+    
+        .meal_quote{
+            font-size: 14px;
+    
+    
+        }
+    }
+
+
+    .meal_price{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        object-fit: contain;
+        height: 40px;
+
+        p{
+            margin-top: auto;
+            font-weight: 700;
+            
+
+        }
+
+    }
+
+
+    
+
+
+
+
+}
 
 
 
