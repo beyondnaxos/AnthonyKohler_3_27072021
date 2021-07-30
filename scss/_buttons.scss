@@ -1,0 +1,36 @@
+.exploration_btn {
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+    color: white;
+    background: linear-gradient(314deg, $purp, $pink);
+    background-size: 200% 200%;
+    font-size: 1em;
+    margin-bottom: 30px;
+    -webkit-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 46% 0%;
+    }
+    50% {
+        background-position: 55% 100%;
+    }
+    100% {
+        background-position: 46% 0%;
+    }
+}
+@keyframes AnimationName {
+    0% {
+        background-position: 46% 0%;
+    }
+    50% {
+        background-position: 55% 100%;
+    }
+    100% {
+        background-position: 46% 0%;
+    }
+}
