@@ -14,12 +14,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
     align-items: center;
 }
 
 body {
     @include colMode;
+    font-family: "Roboto", sans-serif;
+
 }
 
 .logo--container {
@@ -198,7 +199,9 @@ footer {
             }
 
             .list_icon {
-                width: 20px;
+                color: white;
+                width: 24px;
+                padding-left: 2px;
             }
 
             .list_text{
