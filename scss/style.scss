@@ -7,8 +7,7 @@
 @import'bg-img';
 @import 'food-list';
 
-
-*,
+ *,
 ::before,
 ::after {
     margin: 0;
@@ -20,7 +19,6 @@
 body {
     @include colMode;
     font-family: "Roboto", sans-serif;
-
 }
 
 .logo--container {

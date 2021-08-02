@@ -67,6 +67,7 @@
     padding: 15px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 
     
     
@@ -78,17 +79,24 @@
         align-items: flex-start;
         justify-content: flex-start;
         
+        
 
 
 
         .meal_name{
             font-weight: 700;
+            font-size: 19px;
+
+
     
         }
     
         .meal_quote{
-            font-size: 14px;
-    
+            font-size: 16px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 300px;
     
         }
     }
