@@ -49,6 +49,36 @@
 
 .btn--group_meal{
     padding-top: 1em;
+    display: flex;
+    
+    
+
+    .meal_translate{
+        background: $mint;
+        width: 100px;
+        border-radius: 0 15px 15px 0;
+
+        .meal_check{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+           
+            
+
+
+            .check{
+                color: white;
+                font-size: 26px;
+                padding: 26px 0;
+                
+               
+
+                
+            }
+
+        }
+
+    }
 }
 
 .food--list{
