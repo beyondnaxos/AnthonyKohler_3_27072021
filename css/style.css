@@ -178,31 +178,6 @@
 
 .btn--group_meal {
   padding-top: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.btn--group_meal .meal_translate {
-  background: #99e2d0;
-  width: 100px;
-  border-radius: 0 15px 15px 0;
-}
-
-.btn--group_meal .meal_translate .meal_check {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.btn--group_meal .meal_translate .meal_check .check {
-  color: white;
-  font-size: 26px;
-  padding: 26px 0;
 }
 
 .food--list {
