@@ -173,7 +173,7 @@
 .underline {
   width: 2.5rem;
   border-top: 3px solid #99e2d0;
-  margin: .5rem 0 0 0;
+  margin: 0.5rem 0 0 0;
 }
 
 .btn--group_meal {
@@ -185,6 +185,7 @@
 }
 
 .btn-meal {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,10 +199,38 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: black;
-  padding: 15px;
   border-radius: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+}
+
+.btn-meal:hover > .valid {
+  margin-right: 0;
+}
+
+.btn-meal:hover > .valid > .valid-icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.btn-meal .valid {
+  padding: 0;
+  position: relative;
+  background-color: #99e2d0;
+  overflow: hidden;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  margin-right: -5rem;
+  width: 4.7rem;
+}
+
+.btn-meal .valid .valid-icon {
+  color: white;
+  padding: 25px;
+  font-size: 25px;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
 }
 
 .btn-meal .meal {
@@ -219,6 +248,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-left: 15px;
 }
 
 .btn-meal .meal .meal_name {
@@ -247,6 +277,8 @@
   -o-object-fit: contain;
      object-fit: contain;
   height: 40px;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .btn-meal .meal_price p {

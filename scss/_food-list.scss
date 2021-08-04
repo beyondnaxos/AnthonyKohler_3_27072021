@@ -1,131 +1,125 @@
-
-.main--bloc_group{
+.main--bloc_group {
     width: 100%;
     background-color: $gray;
     position: relative;
     bottom: 55px;
-    padding: 30px 15px ;
+    padding: 30px 15px;
     border-radius: 50px 50px 0 0;
     display: flex;
     flex-direction: column;
     row-gap: 2em;
     align-items: flex-start;
 
-
-
-
-    .title-heart{
+    .title-heart {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
         padding: 0 10px;
 
-    
-        .shrnk{
+        .shrnk {
             font-family: $shrk;
             font-size: 30px;
         }
-        .heart{
-        font-size: 40px;            
-
+        .heart {
+            font-size: 40px;
         }
     }
-    
 
-
-    footer{
+    footer {
         margin-top: auto;
-
     }
-
 }
 
-.underline{
+.underline {
     width: 2.5rem;
     border-top: 3px solid #99e2d0;
-    margin: .5rem 0 0 0;
+    margin: 0.5rem 0 0 0;
 }
 
-.btn--group_meal{
+.btn--group_meal {
     padding-top: 1em;
 }
 
-.food--list{
+.food--list {
     width: 100%;
-    
-
 }
 
-.btn-meal{
+.btn-meal {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
     background-color: #fff;
     justify-content: space-between;
     color: black;
-    padding: 15px;
+    // padding: 15px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    &:hover>.valid{
+        margin-right: 0;
+    }
+
+    &:hover>.valid>.valid-icon{
+        transform: rotate(360deg);
+    }
     
 
-    
-    
+    .valid {
+        padding: 0;
 
-    .meal{
+        position: relative;
+        background-color: $mint;
+        overflow: hidden;
+        // animation: anime 2s infinite;
+        transition-duration: 1s;
+        margin-right: -5rem;
+        width: 4.7rem;
+
+        .valid-icon {
+            color: white;
+            padding: 25px;
+            font-size: 25px;
+            transition-duration: 700ms;
+
+        }
+    }
+
+    .meal {
         display: flex;
         flex-direction: column;
         row-gap: 5px;
         align-items: flex-start;
         justify-content: flex-start;
-        
-        
+        padding-left: 15px;
 
-
-
-        .meal_name{
+        .meal_name {
             font-weight: 700;
             font-size: 19px;
-
-
-    
         }
-    
-        .meal_quote{
+
+        .meal_quote {
             font-size: 16px;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
             width: 300px;
-    
         }
     }
 
-
-    .meal_price{
+    .meal_price {
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
         object-fit: contain;
         height: 40px;
+        margin-left: auto;
+        margin-right: 20px;
 
-        p{
+        p {
             margin-top: auto;
             font-weight: 700;
-            
-
         }
-
     }
-
-
-    
-
-
-
-
 }
-
-
-
-
