@@ -182,6 +182,7 @@
 }
 
 .btn--group_meal {
+  width: 100%;
   padding-top: 1em;
   opacity: 0;
   -webkit-animation: fade-in 250ms linear;
@@ -255,24 +256,6 @@
   }
 }
 
-@-webkit-keyframes delayed {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes delayed {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .food--list {
   width: 100%;
 }
@@ -300,6 +283,15 @@
 
 .btn-meal:hover > .valid {
   margin-right: 0;
+  margin-left: 1em;
+}
+
+.btn-meal:hover > .meal {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 270px;
 }
 
 .btn-meal:hover > .valid > .valid-icon {
@@ -312,10 +304,11 @@
   position: relative;
   background-color: #99e2d0;
   overflow: hidden;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 750ms;
+          transition-duration: 750ms;
   margin-right: -5rem;
   width: 4.7rem;
+  margin-left: 1em;
 }
 
 .btn-meal .valid .valid-icon {
@@ -342,6 +335,8 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 15px;
+  -webkit-transition-duration: 750ms;
+          transition-duration: 750ms;
 }
 
 .btn-meal .meal .meal_name {
@@ -371,7 +366,7 @@
      object-fit: contain;
   height: 40px;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 .btn-meal .meal_price p {
