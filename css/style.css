@@ -178,6 +178,46 @@
 
 .btn--group_meal {
   padding-top: 1em;
+  -webkit-animation: delayed 2s linear 0s;
+          animation: delayed 2s linear 0s;
+}
+
+.main--bloc_meal:nth-child(3n + 1) {
+  background-color: delayed(1s, 2s);
+}
+
+.main--bloc_meal:nth-child(3n + 2) {
+  background-color: delayed(1s, 3s);
+}
+
+.main--bloc_meal:nth-child(3n + 3) {
+  background-color: delayed(1s, 4s);
+}
+
+.main--bloc_meal:nth-child(3n + 4) {
+  background-color: delayed(1s, 5s);
+}
+
+@-webkit-keyframes delayed {
+  0% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  100% {
+    -webkit-filter: opacity(100%);
+            filter: opacity(100%);
+  }
+}
+
+@keyframes delayed {
+  0% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  100% {
+    -webkit-filter: opacity(100%);
+            filter: opacity(100%);
+  }
 }
 
 .food--list {

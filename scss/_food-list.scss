@@ -31,9 +31,6 @@
     }
 }
 
-
-
-
 .underline {
     width: 2.5rem;
     border-top: 3px solid #99e2d0;
@@ -42,6 +39,19 @@
 
 .btn--group_meal {
     padding-top: 1em;
+    animation: delayed 2s linear 0s;
+}
+
+@for $i from 1 to 5 {
+    .main--bloc_meal:nth-child(3n + #{$i}) {
+        background-color: delayed(1s, $i + 1s);
+    }
+}
+
+@keyframes delayed {
+    0%{filter: opacity(0);}
+    100%{filter: opacity(100%);}
+    
 }
 
 .food--list {
@@ -60,14 +70,13 @@
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
-    &:hover>.valid{
+    &:hover > .valid {
         margin-right: 0;
     }
 
-    &:hover>.valid>.valid-icon{
+    &:hover > .valid > .valid-icon {
         transform: rotate(360deg);
     }
-    
 
     .valid {
         padding: 0;
@@ -85,7 +94,6 @@
             padding: 25px;
             font-size: 25px;
             transition-duration: 700ms;
-
         }
     }
 
