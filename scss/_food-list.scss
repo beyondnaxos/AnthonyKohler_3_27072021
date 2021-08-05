@@ -82,7 +82,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90vw;
     background-color: #fff;
     justify-content: space-between;
     color: black;
@@ -93,21 +93,30 @@
     
     &:hover > .valid {
         margin-right: 0;
-        margin-left: 1em;
+        // margin-left: 1em;
 
 
     }
-    &:hover > .meal  {
-        font-size: 16px;
-        text-overflow: ellipsis;
+    &:hover > .meal>.meal_name {
         white-space: nowrap;
-        overflow: hidden;
-       width: 270px;
+        text-overflow: ellipsis;
+        width: 50%;
+
+
+
+    }
+    &:hover > .meal>.meal_quote {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 50%;
+
+
     }
     
 
     &:hover > .valid > .valid-icon {
         transform: rotate(360deg);
+        
     }
 
     .valid {
@@ -124,33 +133,37 @@
 
         .valid-icon {
             color: white;
-            padding: 25px;
+            padding:25px;
             font-size: 25px;
             transition-duration: 700ms;
         }
     }
 
     .meal {
+        position: relative;
         display: flex;
         flex-direction: column;
         row-gap: 5px;
         align-items: flex-start;
         justify-content: flex-start;
         padding-left: 15px;
-        transition-duration: 750ms;
 
 
         .meal_name {
             font-weight: 700;
-            font-size: 19px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+
         }
 
         .meal_quote {
-            font-size: 16px;
+            font-size: 15px;
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
             width: 300px;
+            transition: all 0.3s ease;
+
         }
     }
 
