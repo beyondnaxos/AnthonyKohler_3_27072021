@@ -288,13 +288,13 @@
 .btn-meal:hover > .meal > .meal_name {
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 50%;
+  width: 30%;
 }
 
 .btn-meal:hover > .meal > .meal_quote {
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 50%;
+  width: 30%;
 }
 
 .btn-meal:hover > .valid > .valid-icon {

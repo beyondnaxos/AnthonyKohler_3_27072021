@@ -100,7 +100,7 @@
     &:hover > .meal>.meal_name {
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 50%;
+        width: 30%;
 
 
 
@@ -108,7 +108,7 @@
     &:hover > .meal>.meal_quote {
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 50%;
+        width: 30%;
 
 
     }
@@ -153,6 +153,7 @@
             font-weight: 700;
             font-size: 18px;
             transition: all 0.3s ease;
+            
 
         }
 
