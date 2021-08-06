@@ -312,18 +312,17 @@
 
 .btn-meal:hover > .valid {
   margin-right: 0;
+  margin-left: 20px;
 }
 
-.btn-meal:hover > .meal > .meal_name {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: calc(100%-30px);
+.btn-meal:hover > .meal {
+  width: calc(100% - 140px);
+  overflow: hidden;
 }
 
-.btn-meal:hover > .meal > .meal_quote {
+.btn-meal:hover > .meal > .meal_name, .btn-meal .meal_quote {
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: calc(100%-30px);
 }
 
 .btn-meal:hover > .valid > .valid-icon {
@@ -368,7 +367,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 15px;
-  width: calc(100%-40px);
+  white-space: nowrap;
 }
 
 .btn-meal .meal .meal_name {
@@ -376,7 +375,11 @@
   font-size: 18px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  white-space: no-wrap;
+  white-space: nowrap;
+  width: calc(100% - 0px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .btn-meal .meal .meal_quote {
@@ -384,12 +387,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 300px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 100%;
+  overflow: hidden;
 }
 
 .btn-meal .meal_price {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
