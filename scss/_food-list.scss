@@ -51,7 +51,7 @@
     animation: fade-in 1000ms both;
     animation-fill-mode:both;
     
-    animation-delay: 1s ease;
+    animation-delay: 1s ;
     @for $i from 1 to 10{
       &:nth-child(#{$i}){
         animation-delay: $i * 450ms;
