@@ -48,9 +48,10 @@
     // animation-delay: 0.1s;
     // animation: delayed  1s both ;
     opacity: 0;
-    animation: fade-in 750ms linear;
+    animation: fade-in 800ms both;
     animation-fill-mode:both;
-    animation-delay: 1ms ease;
+    
+    animation-delay: 1s ease;
     @for $i from 1 to 10{
       &:nth-child(#{$i}){
         animation-delay: $i * 220ms;

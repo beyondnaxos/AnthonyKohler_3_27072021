@@ -186,12 +186,12 @@
   width: 100%;
   padding-top: 1em;
   opacity: 0;
-  -webkit-animation: fade-in 750ms linear;
-          animation: fade-in 750ms linear;
+  -webkit-animation: fade-in 800ms both;
+          animation: fade-in 800ms both;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 1ms ease;
-          animation-delay: 1ms ease;
+  -webkit-animation-delay: 1s ease;
+          animation-delay: 1s ease;
 }
 
 .btn--group_meal:nth-child(1) {
@@ -739,8 +739,8 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-animation: load 3s linear;
-          animation: load 3s linear;
+  -webkit-animation: load 1500ms linear;
+          animation: load 1500ms linear;
   -webkit-transform: translateX(0);
           transform: translateX(0);
   opacity: 0;
