@@ -288,13 +288,13 @@
 .btn-meal:hover > .meal > .meal_name {
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 30%;
+  width: calc(100%-30px);
 }
 
 .btn-meal:hover > .meal > .meal_quote {
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 30%;
+  width: calc(100%-30px);
 }
 
 .btn-meal:hover > .valid > .valid-icon {
@@ -339,6 +339,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-left: 15px;
+  width: calc(100%-40px);
 }
 
 .btn-meal .meal .meal_name {
@@ -346,6 +347,7 @@
   font-size: 18px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  white-space: no-wrap;
 }
 
 .btn-meal .meal .meal_quote {

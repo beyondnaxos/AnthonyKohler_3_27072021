@@ -93,6 +93,7 @@
     
     &:hover > .valid {
         margin-right: 0;
+
         // margin-left: 1em;
 
 
@@ -100,7 +101,8 @@
     &:hover > .meal>.meal_name {
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 30%;
+        width: calc(100%-30px);
+
 
 
 
@@ -108,7 +110,7 @@
     &:hover > .meal>.meal_quote {
         white-space: nowrap;
         text-overflow: ellipsis;
-        width: 30%;
+        width: calc(100%-30px);
 
 
     }
@@ -147,12 +149,16 @@
         align-items: flex-start;
         justify-content: flex-start;
         padding-left: 15px;
+        width: calc(100%-40px);
+
 
 
         .meal_name {
             font-weight: 700;
             font-size: 18px;
             transition: all 0.3s ease;
+            white-space: no-wrap; 
+
             
 
         }
