@@ -21,53 +21,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-// .loader--section{
 
-//     width: 100vw;
-//     height: 100vh;
-//     background-color: rgb(27, 27, 27); 
-//     line-height: 50px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;  
-//     filter: opacity(0.9);
-//     position: fixed;
-//     z-index: 333;
-    
-//     .loader {
-//         height: 50px;
-//         width: 50px;
-//         display: inline-block;
-        
-//     }
-    
-//     .loader-quart{
-//         border: 6px solid rgba(27, 27, 27, 1);
-//         border-radius: 50px;
-//         position: relative;
-//     }
-    
-//     .loader-quart::after{
-//         content: "";
-//         position: absolute;
-//         top: -6px;
-//         left: -6px;
-//         bottom: -6px;
-//         right: -6px;
-//         border: 6px solid transparent;
-//         border-top-color:  rgb(114, 85, 218);
-//         border-bottom-color:  rgb(175, 153, 255);
-//         border-radius: 50px;
-//         animation: spin 2s linear infinite;
-    
-//     }
-//     }
-    
-//     @keyframes spin {
-//         0%{transform: rotate(0deg);}
-//         100%{transform: rotate(360deg);}
-        
-//     }
 
 .logo--container {
     @include hCenter;
@@ -267,3 +221,76 @@ a{
 #card_1, #card_2{
     padding-bottom: 1em;
 }
+
+ .loader--section{
+     width: 100vw;
+     height: 100vh;
+     background-color: rgb(255, 255, 255); 
+     line-height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;  
+     position: fixed;
+     z-index: -500;
+     top: 0;left: 0;right: 0;bottom: 0; 
+     animation: load 3s linear;
+     transform: translateX(0);
+     opacity: 0;
+     
+    
+
+     @keyframes load {
+        0%{
+            opacity: 1;
+            z-index: 500;
+            
+        }       
+        80%{
+            opacity: 1;
+            z-index: 500;
+            
+        }       
+        100%{
+         opacity: 0;
+        }
+        }
+     .loader {
+         height: 50px;
+         width: 50px;
+         display: inline-block;
+         
+
+      
+     }
+  
+     .loader-quart{
+         border: 6px solid rgb(255, 255, 255);
+         border-radius: 50px;
+         position: relative;
+         animation: load 3s linear;
+        opacity: 0;
+     }
+  
+     .loader-quart::after{
+         content: "";
+         position: absolute;
+         top: -6px;
+         left: -6px;
+         bottom: -6px;
+         right: -6px;
+         border: 6px solid transparent;
+         border-top-color:  rgb(114, 85, 218);
+         border-bottom-color:  rgb(175, 153, 255);
+         border-radius: 50px;
+         animation: spin 2s linear infinite;
+         
+         
+  
+     }
+     }
+  
+     @keyframes spin {
+         0%{transform: rotate(0deg);}
+         100%{transform: rotate(360deg);}
+      
+     }
