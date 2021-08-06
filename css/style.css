@@ -316,6 +316,7 @@
 }
 
 .btn-meal:hover > .meal {
+  width: calc(100% - 100px);
   overflow: hidden;
 }
 
