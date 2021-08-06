@@ -182,77 +182,106 @@
 }
 
 .btn--group_meal {
+  position: relative;
   width: 100%;
   padding-top: 1em;
   opacity: 0;
-  -webkit-animation: fade-in 250ms linear;
-          animation: fade-in 250ms linear;
+  -webkit-animation: fade-in 750ms linear;
+          animation: fade-in 750ms linear;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms ease;
+          animation-delay: 1ms ease;
 }
 
 .btn--group_meal:nth-child(1) {
-  -webkit-animation-delay: 120ms;
-          animation-delay: 120ms;
+  -webkit-animation-delay: 220ms;
+          animation-delay: 220ms;
 }
 
 .btn--group_meal:nth-child(2) {
-  -webkit-animation-delay: 240ms;
-          animation-delay: 240ms;
+  -webkit-animation-delay: 440ms;
+          animation-delay: 440ms;
 }
 
 .btn--group_meal:nth-child(3) {
-  -webkit-animation-delay: 360ms;
-          animation-delay: 360ms;
+  -webkit-animation-delay: 660ms;
+          animation-delay: 660ms;
 }
 
 .btn--group_meal:nth-child(4) {
-  -webkit-animation-delay: 480ms;
-          animation-delay: 480ms;
+  -webkit-animation-delay: 880ms;
+          animation-delay: 880ms;
 }
 
 .btn--group_meal:nth-child(5) {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
 }
 
 .btn--group_meal:nth-child(6) {
-  -webkit-animation-delay: 720ms;
-          animation-delay: 720ms;
+  -webkit-animation-delay: 1320ms;
+          animation-delay: 1320ms;
 }
 
 .btn--group_meal:nth-child(7) {
-  -webkit-animation-delay: 840ms;
-          animation-delay: 840ms;
+  -webkit-animation-delay: 1540ms;
+          animation-delay: 1540ms;
 }
 
 .btn--group_meal:nth-child(8) {
-  -webkit-animation-delay: 960ms;
-          animation-delay: 960ms;
+  -webkit-animation-delay: 1760ms;
+          animation-delay: 1760ms;
 }
 
 .btn--group_meal:nth-child(9) {
-  -webkit-animation-delay: 1080ms;
-          animation-delay: 1080ms;
+  -webkit-animation-delay: 1980ms;
+          animation-delay: 1980ms;
 }
 
 @-webkit-keyframes fade-in {
-  0% {
+  0%, 30% {
     opacity: 0;
+    top: 10px;
+  }
+  50% {
+    opacity: 0.2;
+    top: -11px;
+  }
+  60% {
+    opacity: 0.4;
+    top: 11px;
+  }
+  75% {
+    opacity: 0.7;
+    top: -5px;
   }
   100% {
     opacity: 1;
+    top: 0;
   }
 }
 
 @keyframes fade-in {
-  0% {
+  0%, 30% {
     opacity: 0;
+    top: 10px;
+  }
+  50% {
+    opacity: 0.2;
+    top: -11px;
+  }
+  60% {
+    opacity: 0.4;
+    top: 11px;
+  }
+  75% {
+    opacity: 0.7;
+    top: -5px;
   }
   100% {
     opacity: 1;
+    top: 0;
   }
 }
 
