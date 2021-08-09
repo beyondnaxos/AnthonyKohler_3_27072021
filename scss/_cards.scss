@@ -80,6 +80,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 1em;
+    margin-top: 3px;
     .heart-svg-empty_big {
         height: 30px;
         width: 30px;
@@ -111,7 +112,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: 750ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition: 550ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
         text-align: center;
         
 
