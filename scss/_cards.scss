@@ -1,6 +1,6 @@
 .restaurant--group_cards {
     @include colMode();
-    
+
     .card {
         width: 90%;
         height: 250px;
@@ -28,8 +28,6 @@
             padding-top: 1em;
             width: 100%;
 
-        
-
             .description_text {
                 padding-left: 1.5em;
 
@@ -38,14 +36,42 @@
                     margin-bottom: 5px;
                 }
             }
-
-            .heart {
-                padding-right: 1em;
-
-                &:hover {
-                    color: $pink;
-                }
-            }
         }
+    }
+}
+
+.heart-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .heart-svg-empty {
+        position: relative;
+        z-index: 1;
+        padding: 0.5em;
+        margin-right: 1em;
+        transition: 1.3s ease-out;
+        &:hover {
+            filter: opacity(0);
+        }
+        &:hover + .heart-full{
+            transform: scale(1.2);
+        }
+    }
+
+    .heart-full {
+        position: absolute;
+        z-index: 0;
+        margin-right: 1em;
+        font-size: 18px;
+        color: #9c47fc;
+        display: block;
+        background: -webkit-linear-gradient($pink, $purp);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0.5em;
+        transition: 0.3ms ease-in-out;
+
+
     }
 }
