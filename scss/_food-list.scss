@@ -151,7 +151,7 @@
         background-color: $mint;
         overflow: hidden;
         // animation: anime 2s infinite;
-        transition: 400ms cubic-bezier(.69,0,.8,1.05);
+        transition: 500ms cubic-bezier(.33,0,.73,1.11);
         margin-right: -5rem;
         width: 4.7rem;
         margin-left: 1em;
@@ -160,7 +160,7 @@
             color: white;
             padding:25px;
             font-size: 25px;
-            transition: 400ms cubic-bezier(.69,0,.8,1.05);
+            transition: 500ms cubic-bezier(.33,0,.73,1.11);
         }
     }
 
@@ -173,6 +173,7 @@
         justify-content: flex-start;
         padding-left: 15px;
         width: calc(100% - 30px);
+        
 
         white-space:nowrap; 
 
