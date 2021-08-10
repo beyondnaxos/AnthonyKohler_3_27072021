@@ -133,6 +133,7 @@ main{
     .howto--title {
     margin-right: auto;        
     padding-left: 30px;
+    margin-bottom: 40px;
         
         
     }
@@ -238,12 +239,26 @@ footer {
     row-gap: 25px;
     justify-content: start;
     align-items: flex-start;
+    @include desktop{
+        justify-content: center;
+        align-items: center;
+        width: 1024px;
+        border-radius: 25px 25px 0 0;
+    }
+    
 
     .footer--list {
         @include colMode();
         width: 100%;
         row-gap: 15px;
         justify-content: flex-start;
+        @include desktop{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        
+       
 
         .footer_logo {
             color: white;

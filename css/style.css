@@ -739,6 +739,7 @@ body {
 .main--howto .howto--title {
   margin-right: auto;
   padding-left: 30px;
+  margin-bottom: 40px;
 }
 
 .main--howto .btn_bloc {
@@ -887,6 +888,19 @@ footer {
           align-items: flex-start;
 }
 
+@media all and (min-width: 1024px) {
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1024px;
+    border-radius: 25px 25px 0 0;
+  }
+}
+
 footer .footer--list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,6 +917,18 @@ footer .footer--list {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media all and (min-width: 1024px) {
+  footer .footer--list {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 footer .footer--list .footer_logo {
