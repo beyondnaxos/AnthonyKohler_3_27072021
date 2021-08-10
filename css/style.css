@@ -223,12 +223,18 @@
   width: 100%;
 }
 
+@media (min-width: 481px) {
+  .background-image {
+    height: 400px;
+  }
+}
+
 .main--bloc_group {
   width: 100%;
   background-color: #f2f2f2;
   position: relative;
   bottom: 55px;
-  padding: 30px 15px;
+  padding: 30px 15px 50px 15px;
   border-radius: 50px 50px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,7 +266,8 @@
 
 .main--bloc_group .title-heart .shrnk {
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
+  font-size: 26px;
+  margin-right: 10px;
 }
 
 .main--bloc_group .title-heart .heart {

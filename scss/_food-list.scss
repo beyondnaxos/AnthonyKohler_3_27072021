@@ -3,7 +3,7 @@
     background-color: $gray;
     position: relative;
     bottom: 55px;
-    padding: 30px 15px;
+    padding: 30px 15px 50px 15px;
     border-radius: 50px 50px 0 0;
     display: flex;
     flex-direction: column;
@@ -16,10 +16,12 @@
         width: 100%;
         justify-content: space-between;
         padding: 0 10px;
+        
 
         .shrnk {
             font-family: $shrk;
-            font-size: 30px;
+            font-size: 26px;
+            margin-right: 10px;
         }
         .heart {
             font-size: 40px;

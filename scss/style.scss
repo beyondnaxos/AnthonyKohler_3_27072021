@@ -6,6 +6,7 @@
 @import 'buttons';
 @import 'bg-img';
 @import 'food-list';
+@import 'bp';
 
  *,
 ::before,
@@ -46,6 +47,7 @@ body {
         text-align: center;
     }
 }
+
 
 .main--location {
     display: flex;

@@ -1,5 +1,7 @@
 .background-image {
     object-fit: cover;
     width: 100%;
-    
+    @media (min-width: 481px){
+        height: 400px;
+    }    
 }
