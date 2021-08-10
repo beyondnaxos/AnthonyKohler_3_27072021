@@ -21,7 +21,15 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-
+.arrow{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    .arrow-icon{
+        font-size: 24px;
+        color: #252525;
+    }
+}
 
 .logo--container {
     @include hCenter;

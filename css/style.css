@@ -544,6 +544,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.arrow {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+
+.arrow .arrow-icon {
+  font-size: 24px;
+  color: #252525;
+}
+
 .logo--container {
   display: -webkit-box;
   display: -ms-flexbox;
