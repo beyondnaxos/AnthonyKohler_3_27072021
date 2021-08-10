@@ -1,7 +1,15 @@
-@import 'bp';
+@import "bp";
 
 .restaurant--group_cards {
     @include colMode();
+    @include desktop {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 3em;
+        row-gap: 40px;
+    }
 
     .card {
         width: 90%;
@@ -13,10 +21,9 @@
         padding-bottom: 2em;
         margin-bottom: 3em;
         color: black;
-        @include desktop{
-            width: 40%;
-               
-           }
+        @include desktop {
+            width: 45%;
+        }
 
         .card_image {
             width: 100%;
@@ -51,7 +58,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 1em;
-    
+
     .heart-svg-empty {
         position: relative;
         z-index: 1;
@@ -60,11 +67,11 @@
         transition-delay: 250ms;
         &:hover {
             filter: opacity(0);
-            transform:scale(0.7);
+            transform: scale(0.7);
         }
-         &:hover + .heart-full{
-             transform: scale(1.1);
-         }
+        &:hover + .heart-full {
+            transform: scale(1.1);
+        }
     }
 
     .heart-full {
@@ -81,8 +88,6 @@
         padding: 0.5em;
         transition: 500ms ease-in-out;
         transition-delay: 350ms;
-
-
     }
 }
 .heart-group_big {
@@ -101,13 +106,10 @@
         &:hover {
             filter: opacity(0);
             transform: scale(0.7);
-            
         }
-        &:hover + .heart-full_big{
+        &:hover + .heart-full_big {
             transform: scale(1);
-
         }
-        
     }
 
     .heart-full_big {
@@ -126,8 +128,5 @@
         -webkit-text-fill-color: transparent;
         transition: 550ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
         text-align: center;
-        
-
-
     }
 }
