@@ -657,7 +657,7 @@ body {
 
 @media all and (min-width: 1024px) {
   .main--location {
-    width: 100%;
+    width: 941px;
     border-radius: 0 0 30px 30px;
     padding-left: 35px;
   }
@@ -696,6 +696,7 @@ body {
 @media all and (min-width: 1024px) {
   .main--exploration {
     width: 1024px;
+    background-color: #ffffff;
   }
 }
 
