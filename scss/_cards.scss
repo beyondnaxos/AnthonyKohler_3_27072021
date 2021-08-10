@@ -1,3 +1,5 @@
+@import 'bp';
+
 .restaurant--group_cards {
     @include colMode();
 
@@ -11,6 +13,10 @@
         padding-bottom: 2em;
         margin-bottom: 3em;
         color: black;
+        @include desktop{
+            width: 40%;
+               
+           }
 
         .card_image {
             width: 100%;

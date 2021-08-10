@@ -1,7 +1,9 @@
+@import 'bp';
+
 .background-image {
     object-fit: cover;
     width: 100%;
-    @media (min-width: 481px){
+    @include tablet{
         height: 400px;
-    }    
+    }
 }

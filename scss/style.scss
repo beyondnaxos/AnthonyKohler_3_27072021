@@ -20,6 +20,19 @@
 body {
     @include colMode;
     font-family: "Roboto", sans-serif;
+ 
+
+    
+}
+
+main{
+    @include desktop{
+        display: flex;
+        justify-content: center;  
+        width: 1024px;
+        flex-direction: column;
+                   
+               }
 }
 
 .arrow{
@@ -55,6 +68,12 @@ body {
     font-weight: 500;
     background-color: #f2f2f2;
     padding: 18px 0 18px 0;
+    @include desktop {
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+        padding-left: 35px;
+    }
+    
 
     z-index: 4;
     .location {
@@ -76,6 +95,12 @@ body {
     @include colMode();
     padding: 35px;
     row-gap: 25px;
+    
+    @include desktop{
+        width: 1024px;
+  
+           
+       }
 
     .exploration_title {
         width: 78%;
@@ -98,6 +123,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 2em auto;
+   
 
     .howto--title {
         margin-left: 1.4em;
@@ -108,18 +134,25 @@ body {
         flex-direction: row;
         margin-bottom: 20px;
         margin-left: 1em;
+        @include desktop {
+            width: 900px;
+            margin-left: 0;
+           
+        }
 
         .btn--number {
             position: relative;
             left: 13px;
             padding-top: 3px;
             text-align: center;
-            height: 25px;
+            height:25px;
             width: 25px;
             background-color: $purp;
-            border-radius: 15px;
+            border-radius: 25px;
             color: white;
             font-weight: 500;
+           
+           
         }
         .btn--id {
             width: 80vw;
@@ -129,10 +162,10 @@ body {
             border: none;
             border-radius: 20px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            font-weight: 500;
+            font-weight: bold;
             padding-left: 30px;
             color: rgb(59, 59, 59);
-            font-size: 17px;
+            font-size: 16px;
 
             .phone {
                 padding-right: 18px;
@@ -147,6 +180,11 @@ body {
 
     @include colMode();
     padding: 2em 0;
+
+    @include desktop{
+        width: 100%;
+           
+       }
 
     .restaurant--title {
         margin-bottom: 2em;

@@ -1,3 +1,5 @@
+@import "bp";
+
 .main--bloc_group {
     width: 100%;
     background-color: $gray;
@@ -10,13 +12,17 @@
     row-gap: 2em;
     align-items: flex-start;
 
+    @include desktop{
+     width: 1024px;
+        
+    }
+
     .title-heart {
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
         padding: 0 10px;
-        
 
         .shrnk {
             font-family: $shrk;
@@ -33,7 +39,7 @@
     }
 }
 
-.starter{
+.starter {
     font-size: 18px;
     font-weight: 500;
 }
@@ -51,47 +57,44 @@
     // animation: delayed  1s both ;
     opacity: 0;
     animation: fade-in 1000ms both;
-    animation-fill-mode:both;
+    animation-fill-mode: both;
     
-    animation-delay: 1s ;
-    @for $i from 1 to 10{
-      &:nth-child(#{$i}){
-        animation-delay: $i * 450ms;
-        
-      }
+
+    animation-delay: 1s;
+    @for $i from 1 to 10 {
+        &:nth-child(#{$i}) {
+            animation-delay: $i * 450ms;
+        }
     }
+
+   
 }
-@keyframes fade-in{
-    0%,30%{
-      opacity: 0;
-      top: 10px;
-      
+@keyframes fade-in {
+    0%,
+    30% {
+        opacity: 0;
+        top: 10px;
     }
-    50%{
+    50% {
         opacity: 0.2;
         top: -11px;
     }
-    
-    60%{
+
+    60% {
         opacity: 0.4;
         top: 11px;
     }
-    
-    75%{
+
+    75% {
         opacity: 0.7;
         top: -5px;
     }
-    
-    100%{
-      opacity: 1;
-    top:0;
+
+    100% {
+        opacity: 1;
+        top: 0;
     }
-  }
-
-
-
-
-
+}
 
 .food--list {
     width: 100%;
@@ -110,40 +113,29 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
     cursor: pointer;
-    
-    
+    @include desktop{
+        width: 100%;
+           
+       }
+
     &:hover > .valid {
         margin-right: 0;
 
-         margin-left: 20px;
-
-
-
+        margin-left: 20px;
     }
     &:hover > .meal {
-       width: calc(100% - 100px);
-        
+        width: calc(100% - 100px);
+
         overflow: hidden;
-
-
     }
-    &:hover > .meal>.meal_name,.meal_quote {
+    &:hover > .meal > .meal_name,
+    .meal_quote {
         white-space: nowrap;
         text-overflow: ellipsis;
-        
-
-  
-
-
     }
-
-    
-   
-    
 
     &:hover > .valid > .valid-icon {
         transform: rotate(360deg);
-        
     }
 
     .valid {
@@ -153,16 +145,16 @@
         background-color: $mint;
         overflow: hidden;
         // animation: anime 2s infinite;
-        transition: 500ms cubic-bezier(.33,0,.73,1.11);
+        transition: 500ms cubic-bezier(0.33, 0, 0.73, 1.11);
         margin-right: -5rem;
         width: 4.7rem;
         margin-left: 1em;
 
         .valid-icon {
             color: white;
-            padding:25px;
+            padding: 25px;
             font-size: 25px;
-            transition: 500ms cubic-bezier(.33,0,.73,1.11);
+            transition: 500ms cubic-bezier(0.33, 0, 0.73, 1.11);
         }
     }
 
@@ -175,26 +167,17 @@
         justify-content: flex-start;
         padding-left: 15px;
         width: calc(100% - 30px);
-        
 
-        white-space:nowrap; 
-
-
-
+        white-space: nowrap;
 
         .meal_name {
             font-weight: 700;
             font-size: 18px;
             transition: all 0.3s ease;
-            white-space: nowrap; 
+            white-space: nowrap;
             width: 98%;
             text-overflow: ellipsis;
             overflow: hidden;
-           
-
-
-            
-
         }
 
         .meal_quote {
@@ -205,10 +188,6 @@
             transition: all 0.3s ease;
             width: 98%;
             overflow: hidden;
-
-
-
-
         }
     }
 
@@ -221,8 +200,6 @@
         height: 40px;
         margin-left: auto;
         margin-right: 0;
-        
-
 
         p {
             margin-top: auto;

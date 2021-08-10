@@ -1,12 +1,17 @@
+
+
 @mixin tablet {
-    @media only screen and (max-width: $breakpoints ('tablet': 768px)){
+    @media all  and (min-width:  768px){
         @content
     }
 };
-
-
-@mixin laptop {
-    @media only screen and (max-width: $breakpoints ('desktop': 1024px)){
+@mixin desktop {
+    @media all  and (min-width:  1024px){
+        @content
+    }
+};
+@mixin desktop-wide {
+    @media all  and (min-width:  1024px){
         @content
     }
 };
