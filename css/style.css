@@ -507,8 +507,8 @@
   position: relative;
   background-color: #99e2d0;
   overflow: hidden;
-  -webkit-transition: 500ms cubic-bezier(0.33, 0, 0.73, 1.11);
-  transition: 500ms cubic-bezier(0.33, 0, 0.73, 1.11);
+  -webkit-transition: 500ms cubic-bezier(0.47, 0.13, 0.69, 0.92);
+  transition: 500ms cubic-bezier(0.47, 0.13, 0.69, 0.92);
   margin-right: -5rem;
   width: 4.7rem;
   margin-left: 1em;
@@ -518,8 +518,8 @@
   color: white;
   padding: 25px;
   font-size: 25px;
-  -webkit-transition: 500ms cubic-bezier(0.33, 0, 0.73, 1.11);
-  transition: 500ms cubic-bezier(0.33, 0, 0.73, 1.11);
+  -webkit-transition: 500ms cubic-bezier(0.33, 0.5, 0.73, 1.11);
+  transition: 500ms cubic-bezier(0.33, 0.5, 0.73, 1.11);
 }
 
 .btn-meal .meal {
