@@ -214,6 +214,9 @@
   margin-bottom: 30px;
   -webkit-animation: AnimationName 5s ease infinite;
   animation: AnimationName 5s ease infinite;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
 }
 
 @-webkit-keyframes AnimationName {
@@ -255,6 +258,7 @@
   font-size: 20px;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  cursor: pointer;
 }
 
 .background-image {
@@ -273,8 +277,7 @@
   width: 100%;
   background-color: #f2f2f2;
   position: relative;
-  bottom: 55px;
-  padding: 30px 15px 50px 15px;
+  padding: 30px 15px 80px 15px;
   border-radius: 50px 50px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,6 +290,11 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  top: -55px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: -80px;
 }
 
 @media all and (min-width: 1024px) {
@@ -856,6 +864,7 @@ body {
 @media all and (min-width: 1024px) {
   .main--restaurants {
     width: 941px;
+    border-radius: 30px 30px 0 0;
   }
 }
 
@@ -904,6 +913,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 0;
 }
 
 @media all and (min-width: 1024px) {

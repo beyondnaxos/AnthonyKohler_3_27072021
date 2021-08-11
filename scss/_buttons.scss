@@ -10,6 +10,9 @@
     margin-bottom: 30px;
     -webkit-animation: AnimationName 5s ease infinite;
     animation: AnimationName 5s ease infinite;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+
 }
 
 @-webkit-keyframes AnimationName {
@@ -47,5 +50,6 @@ margin-top: 70px;
 padding: 15px 30px;
 font-size: 20px;
 transform: scale(1.2);
+cursor: pointer;
 
 }
