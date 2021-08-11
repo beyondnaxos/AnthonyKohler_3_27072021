@@ -6,21 +6,25 @@
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
-        justify-content: space-between;
         padding: 3em;
-        row-gap: 40px;
+       
     }
-
+    #palette{
+        margin-bottom: 70px;
+    }
     .card {
+       
         width: 90%;
         height: 250px;
         background-color: #fff;
         @include colMode();
-        object-fit: cover;
         border-radius: 20px;
         padding-bottom: 2em;
-        margin-bottom: 3em;
+        position: relative;
+        top: 25px;
         color: black;
+        margin-bottom: 60px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         @include desktop {
             width: 45%;
         }
@@ -28,10 +32,11 @@
         .card_image {
             width: 100%;
             border-radius: 18px 18px 0 0;
-            height: 85%;
+            height: 80%;
             box-sizing: border-box;
             object-fit: cover;
             position: relative;
+            
             
         }
 
@@ -41,6 +46,7 @@
             justify-content: space-between;
             padding-top: 1em;
             width: 100%;
+            font-size: 1.2em;
 
             .description_text {
                 padding-left: 1.5em;
@@ -54,11 +60,14 @@
     }
 }
 
+
+
 .heart-group {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 1em;
+    transform: scale(1.4);
 
     .heart-svg-empty {
         position: relative;
