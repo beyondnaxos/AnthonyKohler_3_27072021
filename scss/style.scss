@@ -20,7 +20,7 @@
 body {
     @include colMode;
     font-family: "Roboto", sans-serif;
- 
+    
 
     
 }
@@ -323,11 +323,17 @@ a{
     
 }
 
-
-
-#card_1, #card_2{
+#card_2{
     padding-bottom: 1em;
     
+}
+
+#card_1{
+    padding-bottom: 1em;
+    margin-bottom: 75px;
+    @include desktop{
+        margin-bottom: 60px;
+    }
 }
 
  .loader--section{

@@ -6,8 +6,8 @@
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
-        padding: 3em;
-       
+        padding: 15px 2.5em 40px 2.5em;
+        justify-content: space-between;
     }
     #palette{
         margin-bottom: 70px;
@@ -26,7 +26,7 @@
         margin-bottom: 60px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         @include desktop {
-            width: 45%;
+            width: 48%;
         }
 
         .card_image {
